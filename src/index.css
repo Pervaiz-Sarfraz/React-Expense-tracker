@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-r from-purple-50 to-pink-300;
+}
+
+.btn {
+  @apply bg-purple-700 p-4 mt-2 py-2 text-white px-20;
+}
+
+.list li {
+  @apply bg-white shadow-black text-gray-600 flex justify-between relative py-5 px-40 my-10 mx-0 w-full;
+}
+
+.list li.plus {
+  @apply border-r-4 border-green-400;
+}
+
+.list li.minus {
+  @apply border-r-4 border-red-900;
+}
+
+.delete-btn {
+  @apply cursor-pointer bg-red-200 bottom-0 text-white text-xl py-1 px-1 absolute top-1/2 left-0  opacity-0 -translate-y-full translate-x--1/2 leading-5;
+}
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+.btn {
+  @apply cursor-pointer bg-gradient-to-r from-purple-500 to-pink-500 shadow-black text-white border-0 block text-xl mt-2 my-2 ml-0 mr-7 p-3 w-full rounded-3xl capitalize;
+}
+
+label {
+  @apply inline-block my-2 mx-0;
+}
+
+input[type="text"],
+input[type="number"] {
+  @apply border-2 border-red-50 rounded-sm block text-sm py-3 w-full;
+}
